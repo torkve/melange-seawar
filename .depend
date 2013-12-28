@@ -1,0 +1,32 @@
+BoardItem.cmo :
+BoardItem.cmx :
+BoardModel.cmo :
+BoardModel.cmx :
+GameController.cmo :
+GameController.cmx :
+ai.cmo : game.cmi board.cmi
+ai.cmx : game.cmx board.cmx
+board.cmo : board.cmi
+board.cmx : board.cmi
+game.cmo : board.cmi game.cmi
+game.cmx : board.cmx game.cmi
+gui.cmo : GameController.cmo game.cmi BoardModel.cmo BoardItem.cmo board.cmi
+gui.cmx : GameController.cmx game.cmx BoardModel.cmx BoardItem.cmx board.cmx
+main.cmo : gui.cmo game.cmi ai.cmo
+main.cmx : gui.cmx game.cmx ai.cmx
+BoardItem.cmo :
+BoardItem.cmx :
+BoardModel.cmo :
+BoardModel.cmx :
+GameController.cmo :
+GameController.cmx :
+ai.cmo : game.cmi board.cmi
+ai.cmx : game.cmx board.cmx
+board.cmo : board.cmi
+board.cmx : board.cmi
+game.cmo : board.cmi game.cmi
+game.cmx : board.cmx game.cmi
+gui.cmo : GameController.cmo game.cmi BoardModel.cmo BoardItem.cmo board.cmi
+gui.cmx : GameController.cmx game.cmx BoardModel.cmx BoardItem.cmx board.cmx
+main.cmo : gui.cmo game.cmi ai.cmo
+main.cmx : gui.cmx game.cmx ai.cmx

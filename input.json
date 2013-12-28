@@ -1,0 +1,66 @@
+[
+  {
+    "classname": "BoardModel",
+    "basename": "QAbstractItemModel",
+    "methods": [
+      {
+        "name": "onMouseClicked",
+        "signature": ["int", "int", "unit"]
+      }
+    ],
+    "properties": [],
+    "slots": [],
+    "signals": [
+    ]
+  },
+  {
+    "classname": "BoardItem",
+    "methods": [],
+    "properties": [
+      {
+        "name": "cellX",
+        "get": "cellX",
+        "notify": "cellXChanged",
+        "type": "int"
+      },
+      {
+        "name": "cellY",
+        "get": "cellY",
+        "notify": "cellYChanged",
+        "type": "int"
+      },
+      {
+        "name": "cellState",
+        "get": "cellState",
+        "set": "setCellState",
+        "notify": "cellStateChanged",
+        "type": "string"
+      }
+    ],
+    "slots": [],
+    "signals": []
+  },
+  {
+    "classname": "GameController",
+    "methods": [
+      {
+        "name": "initBaseState",
+        "signature": ["unit", "unit"]
+      }
+    ],
+    "properties": [],
+    "slots": [],
+    "signals": [
+      {
+        "name": "turnChanged",
+        "args": ["string"],
+        "argnames": ["nextTurn"]
+      },
+      {
+        "name": "noteChanged",
+        "args": ["string"],
+        "argnames": ["newNote"]
+      }
+    ]
+  }
+]

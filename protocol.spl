@@ -1,0 +1,23 @@
+automaton seawar () {
+    Initialize;
+    during {
+        multiple(1..) {
+            Ready;
+            either {
+                Transmit_Message_Shot;
+                Receive_Message_ShotResult;
+            } or {
+                Receive_Message_Shot;
+                Transmit_Message_ShotResult;
+            }
+        }
+    } handle {
+        either {
+            Transmit_Message_Disconnect;
+            exit;
+        } or {
+            Receive_Message_Disconnect;
+            exit;
+        }
+    }
+}

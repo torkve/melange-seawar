@@ -25,4 +25,4 @@ You can add `--ai` option for either server or client to play with AI.
 
 ## Statecalls diagram
 
-![] https://raw.github.com/torkve/melange-seawar/master/seawar.png
+![](https://raw.github.com/torkve/melange-seawar/master/seawar.png)
